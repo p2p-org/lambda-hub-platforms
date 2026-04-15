@@ -30,3 +30,20 @@ updates:
       - "dependencies"
       - "python"
     open-pull-requests-limit: 5
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+    - "dependencies"
+    - "github-actions"
+    reviewers:
+    - "telnet443"
+    groups:
+      actions:
+        patterns:
+          - "*"
+    open-pull-requests-limit: 5
+    # ignore:
+    #   - dependency-name: "example"
