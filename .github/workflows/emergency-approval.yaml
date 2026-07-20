@@ -10,7 +10,7 @@ on:
 jobs:
   emergency-approval:
     name: Emergency Approval
-    uses: p2p-org/security-workflows/.github/workflows/emergency-approval.yaml@main
+    uses: p2p-org/security-workflows/.github/workflows/emergency-approval.yaml@e726caf9621e3f06560265a1678e8af43ee1903d # main
     with:
       pr_number: ${{ github.event.inputs.pr_number }}
     secrets: inherit
